@@ -17,6 +17,8 @@ gulp.task('serve', gulp.series('webpack:watch', 'watch', 'browsersync'));
 gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
+gulp.task('heroku:production', 'RUNNING');
+
 
 function reloadBrowserSync(cb) {
   browserSync.reload();
