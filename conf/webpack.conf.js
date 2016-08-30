@@ -42,8 +42,10 @@ module.exports = {
           presets: ['es2015']
         }
       },
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
-      { test: /\.(ttf|eot|svg|png)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
+      {
+        test: /\.(woff2|woff|ttf|eot|svg|otf|png)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loaders: ["url-loader?limit=100&name=fonts/[name]_[hash].[ext]"]
+      }
     ]
   },
   plugins: [
