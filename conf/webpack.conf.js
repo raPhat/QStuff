@@ -36,6 +36,12 @@ module.exports = {
           'html'
         ]
       },
+      {
+        test: /\.es6\.js$/, loader: "babel-loader",
+        query: {
+          presets: ['es2015']
+        }
+      },
       { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
     ]
   },
