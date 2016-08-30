@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>FountainJS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="http://fountainjs.io/assets/imgs/fountain.png" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header id="header" class="main-header top">
+      <div class="container">
+        <div class="col-xs-2 col-xs-offset-5 text-center">
+          <img class="logo" src="./images/header/LOGO_BD.svg">
+        </div>
+        <div class="col-xs-5 text-right">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-log-in"></span>
+            <span class="message">เข้าสู่ระบบ</span>
+          </button>
+          <button class="btn btn-danger" type="button">
+            <span class="glyphicon glyphicon-user"></span>
+            <span class="message">สมัครสมาชิก</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <Root>Loading...</Root>
+
+    <script>
+      window.onscroll = function() {
+        if(document.body.scrollTop > 10) {
+          document.querySelector('#header').classList.remove('top');
+        } else {
+          document.querySelector('#header').classList.add('top');
+        }
+      };
+    </script>
+  </body>
+</html>
