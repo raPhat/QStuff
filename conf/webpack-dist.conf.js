@@ -40,6 +40,16 @@ module.exports = {
         loaders: [
           'html'
         ]
+      },
+      {
+        test: /\.es6\.js$/, loader: "babel-loader",
+        query: {
+          presets: ['es2015']
+        }
+      },
+      {
+        test: /\.(woff2|woff|ttf|eot|svg|otf|png)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loaders: ["url-loader?limit=100&name=fonts/[name]_[hash].[ext]"]
       }
     ]
   },
