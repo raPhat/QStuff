@@ -8,7 +8,7 @@ import {AlertComponent, DATEPICKER_DIRECTIVES} from 'ng2-bootstrap';
 @Component({
   selector: 'App',
   template: require('./main.html'),
-  providers:[],
+  providers:[ ],
   directives: [
         AlertComponent, DATEPICKER_DIRECTIVES
   ]

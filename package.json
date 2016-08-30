@@ -64,7 +64,7 @@
     "build": "gulp",
     "serve": "gulp serve",
     "serve:dist": "gulp serve:dist",
-    "start": "node server.js",
+    "start": "gulp watch",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
     "postinstall": "gulp default"

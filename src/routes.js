@@ -19,5 +19,5 @@ export const routes = [
     path: '',
     component: Main
   },
-  { path: '**', component: PageNotFoundComponent }
+  {path: '**', component: PageNotFoundComponent}
 ];
