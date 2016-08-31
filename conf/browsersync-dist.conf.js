@@ -8,6 +8,6 @@ module.exports = function () {
       ]
     },
     open: false,
-    port: 5000
+    proxy: 'https://qstuff.herokuapp.com:5000'
   };
 };
