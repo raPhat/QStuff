@@ -19,7 +19,6 @@ gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
 gulp.task('heroku:production', gulp.series('clean', 'build','minify'));
 
-
 function reloadBrowserSync(cb) {
   browserSync.reload();
   cb();
