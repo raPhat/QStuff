@@ -7,7 +7,6 @@ module.exports = function () {
         conf.paths.dist
       ]
     },
-    open: false,
-    proxy: 'https://qstuff.herokuapp.com:5000'
+    open: false
   };
 };
